@@ -205,6 +205,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   color: var(--muted);
   font-weight: 500;
   font-size: 0.95rem;
+  white-space: nowrap;
   transition: color 0.15s;
 }
 
@@ -690,7 +691,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 
 .footer-brand p { color: var(--muted); font-size: 0.94rem; margin-top: 14px; max-width: 320px; }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 0.82rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -889,17 +890,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 /* ------------------------------------------------------------
    Responsivo
    ------------------------------------------------------------ */
-@media (max-width: 960px) {
-  .hero-grid, .winter-grid { grid-template-columns: 1fr; gap: 40px; }
-  .hero { padding: 48px 0 64px; }
-  .hero-media { max-width: 560px; }
-  .why-grid, .steps { grid-template-columns: 1fr 1fr; }
-  .service-card { grid-column: span 6; }
-  .service-card.featured { grid-column: span 12; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 680px) {
+/* Header: colapsa o menu cedo pra nunca quebrar em tablet/notebook pequeno */
+@media (max-width: 1150px) {
   .main-nav {
     display: none;
     position: absolute;
@@ -916,7 +908,23 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 
   .main-nav.open { display: flex; }
   .nav-toggle { display: block; }
+}
+
+@media (max-width: 860px) {
   .header-phone { display: none; }
+}
+
+@media (max-width: 960px) {
+  .hero-grid, .winter-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero { padding: 48px 0 64px; }
+  .hero-media { max-width: 560px; }
+  .why-grid, .steps { grid-template-columns: 1fr 1fr; }
+  .service-card { grid-column: span 6; }
+  .service-card.featured { grid-column: span 12; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 680px) {
   .header-cta .btn { display: none; }
 
   .display { font-size: 2.2rem; }

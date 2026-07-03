@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ec4ff"/>
+      <stop offset="0.55" stop-color="#2f8ee6"/>
+      <stop offset="1" stop-color="#1466c8"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#g)" stroke-width="7" stroke-linecap="round" fill="none">
+    <g id="arm">
+      <line x1="60" y1="52" x2="60" y2="14"/>
+      <line x1="60" y1="24" x2="50" y2="15"/>
+      <line x1="60" y1="24" x2="70" y2="15"/>
+    </g>
+    <use href="#arm" transform="rotate(60 60 52)"/>
+    <use href="#arm" transform="rotate(120 60 52)"/>
+    <use href="#arm" transform="rotate(180 60 52)"/>
+    <use href="#arm" transform="rotate(240 60 52)"/>
+    <use href="#arm" transform="rotate(300 60 52)"/>
+  </g>
+  <path d="M14 100c10-11 21 8 32-2s21 8 32-2 20 7 28-1" stroke="url(#g)" stroke-width="7" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://schneiderrefrigeracao.com.br/sitemap.xml
+Sitemap: https://refrigeracaoschneider.com.br/sitemap.xml

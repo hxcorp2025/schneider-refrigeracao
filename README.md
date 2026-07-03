@@ -1,4 +1,4 @@
-# Schneider Refrigeração — schneiderrefrigeracao.com.br
+# Schneider Refrigeração — refrigeracaoschneider.com.br
 
 Site institucional de alta conversão para WhatsApp. Estático (HTML/CSS/JS puro), hospedado no GitHub Pages.
 
@@ -18,7 +18,7 @@ específica de cada página — o lead já chega dizendo o que quer.
 
 ## DNS na Hostinger (fazer 1x)
 
-No painel da Hostinger → Domínios → schneiderrefrigeracao.com.br → DNS / Nameservers:
+No painel da Hostinger → Domínios → refrigeracaoschneider.com.br → DNS / Nameservers:
 
 1. **Apagar** qualquer registro `A` ou `CNAME` existente de `@` e `www` (ex.: parking).
 2. Criar **4 registros A** para o host `@`:
@@ -28,7 +28,7 @@ No painel da Hostinger → Domínios → schneiderrefrigeracao.com.br → DNS / 
    - `185.199.111.153`
 3. Criar **1 registro CNAME**: host `www` → `hxcorp2025.github.io`
 4. Aguardar propagação (minutos até ~24h).
-5. No GitHub: Settings → Pages → conferir custom domain `schneiderrefrigeracao.com.br` e marcar **Enforce HTTPS** (o checkbox libera depois que o certificado é emitido, pode levar ~1h após a propagação).
+5. No GitHub: Settings → Pages → conferir custom domain `refrigeracaoschneider.com.br` e marcar **Enforce HTTPS** (o checkbox libera depois que o certificado é emitido, pode levar ~1h após a propagação).
 
 ## Google Ads / GA4 (quando for rodar tráfego)
 
@@ -50,7 +50,7 @@ No painel da Hostinger → Domínios → schneiderrefrigeracao.com.br → DNS / 
 2. Criar o perfil "Schneider Refrigeração" — categoria **"Empresa de ar-condicionado"**
    (secundárias: "Serviço de conserto de ar-condicionado", "Empresa de refrigeração").
 3. Área de atendimento: Porto Alegre + cidades da região metropolitana (sem endereço público).
-4. Telefone: (51) 98580-1284 · Site: https://schneiderrefrigeracao.com.br
+4. Telefone: (51) 98580-1284 · Site: https://refrigeracaoschneider.com.br
 5. Preencher serviços, horário e fotos reais de serviços feitos.
 6. **Pedir avaliação no Google pra todo cliente atendido** (mandar o link de avaliação
    no WhatsApp após o serviço). É o fator nº 1 de ranqueamento no mapa.

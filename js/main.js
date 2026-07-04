@@ -27,6 +27,17 @@
     }
   });
 
+  // Botão flutuante só aparece depois que o hero sai da tela
+  // (o hero já tem o CTA principal; evita cobrir os selos no mobile)
+  var waFloat = document.querySelector('.wa-float');
+  var hero = document.querySelector('.hero, .page-hero');
+  if (waFloat && hero && 'IntersectionObserver' in window) {
+    waFloat.classList.add('wa-hidden');
+    new IntersectionObserver(function (entries) {
+      waFloat.classList.toggle('wa-hidden', entries[0].isIntersecting);
+    }, { threshold: 0.2 }).observe(hero);
+  }
+
   // Ano do rodapé
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();

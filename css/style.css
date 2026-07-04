@@ -737,6 +737,14 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 
 .wa-float:hover { transform: scale(1.08); }
 
+.wa-float { transition: opacity 0.25s ease, transform 0.25s ease; }
+
+.wa-float.wa-hidden {
+  opacity: 0;
+  transform: scale(0.6);
+  pointer-events: none;
+}
+
 .wa-float::after {
   content: '';
   position: absolute;

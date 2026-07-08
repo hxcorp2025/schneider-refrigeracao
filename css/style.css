@@ -591,13 +591,20 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   margin-top: 26px;
 }
 
-.cities span {
+.cities span,
+.cities a {
   padding: 8px 16px;
   border-radius: 999px;
   border: 1px solid var(--line-strong);
   color: var(--muted);
   font-size: 0.9rem;
   background: rgba(16, 21, 30, 0.6);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.cities a:hover {
+  border-color: rgba(92, 179, 255, 0.5);
+  color: var(--ice);
 }
 
 .cities span.main {

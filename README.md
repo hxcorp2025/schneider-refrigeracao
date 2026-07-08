@@ -30,12 +30,11 @@ No painel da Hostinger → Domínios → refrigeracaoschneider.com.br → DNS / 
 4. Aguardar propagação (minutos até ~24h).
 5. No GitHub: Settings → Pages → conferir custom domain `refrigeracaoschneider.com.br` e marcar **Enforce HTTPS** (o checkbox libera depois que o certificado é emitido, pode levar ~1h após a propagação).
 
-## Google Ads / GA4 (quando for rodar tráfego)
+## Google Ads / GA4
 
-1. Criar a tag do Google (GA4 ou Google Ads) e copiar o snippet `gtag.js`.
-2. Colar o snippet no `<head>` de **todas** as páginas, onde está o comentário
-   `<!-- GOOGLE ADS / GA4: ... -->`.
-3. O evento de conversão **`click_whatsapp`** já dispara sozinho em todo clique
+✅ **GA4 instalado** (08/07/2026): tag `G-48HCD3HYWH` no `<head>` de todas as páginas.
+
+1. O evento de conversão **`click_whatsapp`** já dispara sozinho em todo clique
    de botão de WhatsApp (código em `js/main.js`), com o rótulo do botão
    (`hero`, `cta-final`, `float`, `mobile-bar`, etc.) e a página.
 4. No Google Ads: Metas → Conversões → criar conversão a partir do evento
@@ -54,6 +53,23 @@ No painel da Hostinger → Domínios → refrigeracaoschneider.com.br → DNS / 
 5. Preencher serviços, horário e fotos reais de serviços feitos.
 6. **Pedir avaliação no Google pra todo cliente atendido** (mandar o link de avaliação
    no WhatsApp após o serviço). É o fator nº 1 de ranqueamento no mapa.
+
+## Off-page / SEO local (checklist manual)
+
+Depois de cada rodada de páginas novas:
+1. Search Console → Sitemaps → reenviar `sitemap.xml`
+2. Inspeção de URL → solicitar indexação das URLs novas (cota ~10/dia)
+
+Citações locais (fazer 1x, sempre com nome e telefone IDÊNTICOS:
+"Schneider Refrigeração" + (51) 98580-1284 + https://refrigeracaoschneider.com.br):
+- [ ] Google Business Profile (item nº 1 — passo a passo na seção acima)
+- [ ] Bing Places (bingplaces.com — dá pra importar do Google Business em 2 cliques)
+- [ ] GuiaMais (guiamais.com.br)
+- [ ] Apontador (apontador.com.br)
+- [ ] Solutudo (solutudo.com.br)
+- [ ] Hotfrog (hotfrog.com.br)
+- [ ] Cylex (cylex.com.br)
+- [ ] Link do site na bio do Instagram + post de lançamento
 
 ## Pendências de conteúdo
 

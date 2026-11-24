@@ -607,11 +607,17 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   color: var(--ice);
 }
 
-.cities span.main {
+.cities span.main,
+.cities a.main {
   border-color: rgba(92, 179, 255, 0.5);
   color: var(--ice);
   font-weight: 600;
 }
+
+/* Bloco de bairros por zona / cidades próximas (páginas de cidade) */
+.area-block { margin-top: 30px; }
+.area-block h3 { font-size: 1.05rem; font-weight: 700; }
+.area-block .cities { margin-top: 12px; }
 
 /* ------------------------------------------------------------
    FAQ

@@ -619,6 +619,73 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .area-block h3 { font-size: 1.05rem; font-weight: 700; }
 .area-block .cities { margin-top: 12px; }
 
+/* Calculadora de BTU e gasto de luz */
+.calc {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+@media (max-width: 860px) { .calc { grid-template-columns: 1fr; } }
+.calc-form,
+.calc-result {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+.calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.calc-field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.calc-field label { font-weight: 600; font-size: 0.95rem; color: var(--text); }
+.calc-field small { color: var(--muted-2); font-size: 0.85rem; line-height: 1.4; }
+.calc input,
+.calc select {
+  width: 100%;
+  background: var(--bg-2);
+  color: var(--text);
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 1rem;
+}
+.calc input:focus,
+.calc select:focus { outline: 2px solid var(--blue-bright); outline-offset: 1px; border-color: transparent; }
+.calc-result .big {
+  font-size: clamp(2.3rem, 7vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+}
+.calc-result .note { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+.calc-costs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.calc-cost {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.calc-cost span { color: var(--muted); font-size: 0.85rem; }
+.calc-cost b { font-size: 1.45rem; color: var(--text); font-variant-numeric: tabular-nums; }
+.btu-table-wrap { overflow-x: auto; margin-top: 22px; }
+.btu-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+@media (max-width: 480px) {
+  .btu-table th,
+  .btu-table td { padding: 10px 8px; font-size: 0.86rem; }
+}
+.btu-table th,
+.btu-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; }
+.btu-table th { color: var(--muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.btu-table td { font-variant-numeric: tabular-nums; color: var(--text); }
+
 /* ------------------------------------------------------------
    FAQ
    ------------------------------------------------------------ */

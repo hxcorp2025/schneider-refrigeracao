@@ -38,6 +38,19 @@
     }, { threshold: 0.2 }).observe(hero);
   }
 
+  // Vídeo explicativo: conta o primeiro play de cada vídeo no GA4
+  var videos = document.querySelectorAll('video[data-video]');
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].addEventListener('play', function () {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'video_play', {
+          event_label: this.getAttribute('data-video'),
+          page_path: window.location.pathname
+        });
+      }
+    }, { once: true });
+  }
+
   // Ano do rodapé
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();

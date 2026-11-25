@@ -938,6 +938,34 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .article-body p strong, .article-body li strong { color: var(--text); }
 .article-body ul { margin: 0 0 16px 22px; color: var(--muted); }
 .article-body li { margin-bottom: 8px; }
+.article-body .resposta-rapida { color: var(--text); font-size: 1.08rem; margin-bottom: 26px; }
+
+/* Vídeo explicativo dentro do artigo (vertical, 9:16) */
+.video-explica {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin: 0 0 8px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+.video-explica video {
+  flex: 0 0 auto;
+  width: 200px;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius);
+  background: #000;
+  display: block;
+}
+.video-explica figcaption b { display: block; color: var(--text); font-size: 1.2rem; line-height: 1.25; margin-bottom: 8px; }
+.video-explica figcaption span { color: var(--muted); font-size: 0.98rem; }
+@media (max-width: 560px) {
+  .video-explica { flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
+  .video-explica video { width: 100%; max-width: 300px; align-self: center; }
+}
 
 .myth-truth {
   display: grid;

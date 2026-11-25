@@ -314,10 +314,10 @@
    "Calor não espera. Seu conserto também não deveria."
   ],
   "ids_negocio": [],
-  "links_internos_no_texto": 7,
+  "links_internos_no_texto": 8,
   "og_image": "https://refrigeracaoschneider.com.br/img/og.jpg",
   "og_title": "Ar condicionado não gela: 7 causas e o que fazer",
-  "palavras": 1168,
+  "palavras": 1262,
   "robots": "",
   "tipos": [
    "Answer",
@@ -326,7 +326,8 @@
    "FAQPage",
    "ListItem",
    "Organization",
-   "Question"
+   "Question",
+   "VideoObject"
   ],
   "titulo": "Ar Condicionado Não Gela? 7 Causas e o Que Fazer | Schneider Refrigeração"
  },

@@ -51,6 +51,14 @@
     }, { once: true });
   }
 
+  // Black Friday: depois de 06/12/2026 some o selo e a faixa, e o título volta pra "na promoção"
+  if (new Date() >= new Date('2026-12-07T00:00:00-03:00')) {
+    var bfSome = document.querySelectorAll('[data-bf]');
+    for (var b = 0; b < bfSome.length; b++) bfSome[b].hidden = true;
+    var bfVolta = document.querySelectorAll('[data-bf-depois]');
+    for (var d = 0; d < bfVolta.length; d++) bfVolta[d].hidden = false;
+  }
+
   // Ano do rodapé
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();

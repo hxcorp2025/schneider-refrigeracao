@@ -1155,6 +1155,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .bf-rodape { margin-top: 18px; color: var(--muted); font-size: 0.95rem; }
 
 .bf-faixa { padding: 0 0 8px; }
+.bf-faixa-cidade { padding: 28px 0 0; }
 .bf-faixa-link {
   display: flex;
   align-items: center;

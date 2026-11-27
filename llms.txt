@@ -21,6 +21,7 @@ As 34 cidades da Região Metropolitana de Porto Alegre e o litoral norte gaúcho
 
 - [Quanto custa instalar um ar condicionado split em 2026](https://refrigeracaoschneider.com.br/quanto-custa-instalar-ar-condicionado/): o que define o preço da instalação e como pedir um orçamento exato grátis
 - [Ar condicionado não gela: 7 causas](https://refrigeracaoschneider.com.br/ar-condicionado-nao-gela/): guia de diagnóstico, incluindo "só ventila", "gela pouco", "parou do nada", inverter e como saber se falta gás
+- [Diagnóstico de ar condicionado por sintoma](https://refrigeracaoschneider.com.br/diagnostico-de-ar-condicionado/): ferramenta grátis que aponta a causa provável quando o ar não gela, pinga, não liga, faz barulho, tem cheiro ruim ou desarma o disjuntor
 - [Calculadora de BTU e de gasto de luz](https://refrigeracaoschneider.com.br/calculadora-de-btu/): BTU indicado por m², pessoas, sol e eletrônicos, e gasto mensal estimado (convencional e inverter)
 - [Ar condicionado no modo quente gasta muito? Mito](https://refrigeracaoschneider.com.br/ar-quente-no-inverno/): inverter aquece gastando ~1/3 de um aquecedor elétrico
 

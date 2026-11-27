@@ -1183,3 +1183,207 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .bf-cta { width: 100%; justify-content: center; padding: 17px 18px; }
   .bf-faixa-link { gap: 10px; padding: 16px; }
 }
+
+/* ------------------------------------------------------------
+   Diagnóstico por sintoma (27/11/2026)
+   Usado em /diagnostico-de-ar-condicionado/ e dentro de /ar-condicionado-nao-gela/
+   ------------------------------------------------------------ */
+.diag { max-width: 760px; margin: 0 auto; scroll-margin-top: 92px; }
+.article-body .diag { margin: 0 0 30px; }
+.diag-reserva {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+.diag-card {
+  background: linear-gradient(180deg, rgba(20, 102, 200, 0.14), rgba(16, 21, 30, 0) 42%), var(--surface);
+  border: 1px solid rgba(92, 179, 255, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 30px 28px 26px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+.diag-passo {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ice);
+  margin-bottom: 12px;
+}
+.diag-card .diag-pergunta {
+  font-size: clamp(1.3rem, 3.4vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 auto 20px;
+  max-width: 22em;
+  text-wrap: balance;
+  outline: none;
+}
+.diag-card .diag-ajuda { color: var(--muted); font-size: 0.95rem; max-width: 34em; margin: -8px auto 20px; }
+
+.diag-sintomas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.diag-sintoma,
+.diag-opcao {
+  font: inherit;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg-2);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+}
+.diag-sintoma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 108px;
+  padding: 16px 10px;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+.diag-sintoma svg { color: var(--blue-bright); }
+.diag-opcoes { display: grid; gap: 10px; max-width: 520px; margin: 0 auto; }
+.diag-opcao { min-height: 56px; padding: 14px 18px; font-size: 1rem; line-height: 1.3; }
+.diag-sintoma:hover,
+.diag-opcao:hover { border-color: var(--blue-bright); background: var(--surface-2); transform: translateY(-2px); }
+.diag-sintoma:focus-visible,
+.diag-opcao:focus-visible,
+.diag-voltar:focus-visible { outline: 2px solid var(--blue-bright); outline-offset: 2px; }
+
+.diag-selo {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  border: 1px solid transparent;
+}
+.diag-selo-casa { color: #7be3a4; background: rgba(35, 194, 95, 0.12); border-color: rgba(35, 194, 95, 0.35); }
+.diag-selo-tecnico { color: var(--ice); background: rgba(47, 142, 230, 0.16); border-color: rgba(92, 179, 255, 0.4); }
+.diag-selo-urgente { color: #ffc978; background: rgba(255, 170, 60, 0.12); border-color: rgba(255, 170, 60, 0.42); }
+.diag-selo-normal { color: var(--muted); background: rgba(148, 178, 215, 0.08); border-color: var(--line-strong); }
+.diag-card .diag-titulo-res { margin-bottom: 14px; }
+.diag-card .diag-texto { color: var(--muted); font-size: 1.02rem; max-width: 36em; margin: 0 auto 22px; }
+.diag-card .diag-sub {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ice);
+  margin: 0 0 10px;
+}
+.diag-card .diag-passos {
+  list-style: none;
+  counter-reset: passo;
+  max-width: 560px;
+  margin: 0 auto 24px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  text-align: left;
+  color: var(--text);
+}
+.diag-card .diag-passos li {
+  counter-increment: passo;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+  margin: 0;
+  padding: 13px 16px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+.diag-card .diag-passos li::before {
+  content: counter(passo);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ice);
+  background: rgba(47, 142, 230, 0.2);
+}
+.diag-acoes { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 16px; }
+.diag-card .diag-nota { color: var(--muted-2); font-size: 0.86rem; max-width: 34em; margin: 0 auto; }
+.diag-fim {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 22px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 0.93rem;
+}
+.diag-voltar {
+  font: inherit;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 6px 4px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.diag-voltar:hover { color: var(--blue-bright); }
+.diag-fim a { padding: 6px 4px; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Chamada do diagnóstico dentro do artigo */
+.article-body .diag-chamada { color: var(--text); font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin: 34px 0 6px; }
+.article-body .diag-chamada + p { margin-bottom: 16px; }
+
+/* Página com a coluna toda centrada (diagnóstico) */
+.pagina-centrada .page-hero { text-align: center; padding: 52px 0 44px; }
+.pagina-centrada .page-hero .breadcrumb { justify-content: center; }
+.pagina-centrada .page-hero h1,
+.pagina-centrada .page-hero .hero-sub { margin-left: auto; margin-right: auto; }
+.pagina-centrada .page-hero h1 { text-wrap: balance; }
+.pagina-centrada .page-hero .hero-sub { max-width: 600px; margin-bottom: 0; }
+.pagina-centrada .diag-secao { padding: 48px 0 72px; }
+.pagina-centrada .section-head { text-align: center; }
+.pagina-centrada .section-head .section-lead { margin-left: auto; margin-right: auto; }
+.pagina-centrada .article-body,
+.pagina-centrada .faq-list { margin-left: auto; margin-right: auto; }
+.pagina-centrada .article-body > h2:first-child { margin-top: 0; }
+.diag-lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 980px; margin: 0 auto; }
+.diag-lista article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.diag-lista h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.diag-lista p { color: var(--muted); font-size: 0.97rem; }
+
+@media (max-width: 760px) {
+  .diag-lista { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .diag-card { padding: 24px 16px 20px; }
+  .pagina-centrada .page-hero { padding: 36px 0 32px; }
+  .pagina-centrada .diag-secao { padding: 28px 0 56px; }
+  .diag-sintomas { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .diag-sintoma { min-height: 100px; font-size: 0.94rem; }
+  .diag-acoes .btn { width: 100%; white-space: normal; text-align: center; line-height: 1.25; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .diag-sintoma, .diag-opcao { transition: none; }
+  .diag-sintoma:hover, .diag-opcao:hover { transform: none; }
+}

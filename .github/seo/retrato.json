@@ -314,10 +314,10 @@
    "Calor não espera. Seu conserto também não deveria."
   ],
   "ids_negocio": [],
-  "links_internos_no_texto": 12,
+  "links_internos_no_texto": 13,
   "og_image": "https://refrigeracaoschneider.com.br/img/og.jpg",
   "og_title": "Ar condicionado não gela: 7 causas e o que fazer",
-  "palavras": 1587,
+  "palavras": 1621,
   "robots": "",
   "tipos": [
    "Answer",
@@ -705,6 +705,37 @@
   ],
   "titulo": "Refrigeração Comercial em Porto Alegre | Câmara Fria, Balcões e PMOC | Schneider Refrigeração"
  },
+ "/diagnostico-de-ar-condicionado/": {
+  "canonical": "https://refrigeracaoschneider.com.br/diagnostico-de-ar-condicionado/",
+  "descricao": "Seu ar condicionado não gela, pinga, não liga ou faz barulho? Responda até 3 perguntas e veja a causa provável, o que conferir em casa e quando chamar o técnico.",
+  "h1": [
+   "Ar condicionado com defeito? Descubra a causa provável em 1 minuto"
+  ],
+  "h2": [
+   "Os 6 defeitos mais comuns e o que cada um costuma ser",
+   "Como o diagnóstico funciona",
+   "O que mandar no WhatsApp pra agilizar",
+   "Perguntas sobre o diagnóstico",
+   "Prefere explicar com as suas palavras?"
+  ],
+  "ids_negocio": [],
+  "links_internos_no_texto": 5,
+  "og_image": "https://refrigeracaoschneider.com.br/img/og.jpg",
+  "og_title": "Ar condicionado com defeito? Descubra a causa em 1 minuto",
+  "palavras": 734,
+  "robots": "",
+  "tipos": [
+   "Answer",
+   "BreadcrumbList",
+   "FAQPage",
+   "ListItem",
+   "Offer",
+   "Organization",
+   "Question",
+   "WebApplication"
+  ],
+  "titulo": "Ar Condicionado com Defeito? Diagnóstico Online | Schneider"
+ },
  "/instalacao-de-ar-condicionado/": {
   "canonical": "https://refrigeracaoschneider.com.br/instalacao-de-ar-condicionado/",
   "descricao": "Instalação de ar condicionado split em Porto Alegre e região metropolitana com garantia por escrito, vácuo na linha e acabamento caprichado. Orçamento grátis pelo WhatsApp.",
@@ -791,10 +822,10 @@
   "ids_negocio": [
    "https://refrigeracaoschneider.com.br/#business"
   ],
-  "links_internos_no_texto": 18,
+  "links_internos_no_texto": 19,
   "og_image": "https://refrigeracaoschneider.com.br/img/og.jpg",
   "og_title": "Manutenção e conserto de ar condicionado em Porto Alegre | Schneider Refrigeração",
-  "palavras": 641,
+  "palavras": 670,
   "robots": "",
   "tipos": [
    "Answer",
